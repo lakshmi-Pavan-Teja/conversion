@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> conversion </title>
+    </head>
+    <body>
+        <script>
+            let str = 'I am praCTiciNG Prog';
+let temp = "";
+for(let chars of str){
+  
+  let value = chars.charCodeAt();
+  if(value >= 65 && value <= 90){
+    
+    temp += String.fromCharCode(value + 32);
+  }
+  else if(value >=97 && value <=122){
+      temp += String.fromCharCode(value - 32);
+
+  }
+  else{
+    
+    temp += chars;
+  }
+}
+document.write(temp);
+
+        </script>
+    </body>
+</html>
