@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            changing
+        </title>
+        <style>
+            #ef{
+                color:deepskyblue;
+            }
+            #fg{
+                color: forestgreen;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            #ty{
+                color:deepskyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="ty">conversion of character to binary</h1>
+        <input type="text" id="ti1" value =""/>
+         <input  id="ti2"/>
+         <button onClick="convert();">Convert!</button>
+        <script>
+            function convert() {
+            var output = document.getElementById("ti2");
+             var input = document.getElementById("ti1").value;
+             output.value = "";
+            for (var i = 0; i < input.length; i++) {
+      output.value += input[i].charCodeAt(0).toString(2) + " ";
+  }
+}
+var input = Number(prompt("put in a decimal number yo"));
+console.log(input + "in decimal to decimal:" +input);
+console.log(input +"in decimal to binary:" +input.toString(2));
+            </script>
+        <h1 id="ef">conversion of number to binary number </h1>
+        <p id="gh">To get You need to submit number in prompt and to see output</p>
+        <p id="fg">Give Right click and click on inspect and See in Console Page</p>
+    </body>
+</html>
